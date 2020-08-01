@@ -1,0 +1,9 @@
+D:\Learning\Test\ProblemStatement1solution\PromoEngineAppTestProject\bin\Debug\PromoEngineAppTestProject.dll
+D:\Learning\Test\ProblemStatement1solution\PromoEngineAppTestProject\bin\Debug\PromoEngineAppTestProject.pdb
+D:\Learning\Test\ProblemStatement1solution\PromoEngineAppTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Learning\Test\ProblemStatement1solution\PromoEngineAppTestProject\bin\Debug\PromotionEngineApp.exe
+D:\Learning\Test\ProblemStatement1solution\PromoEngineAppTestProject\bin\Debug\PromotionEngineApp.pdb
+D:\Learning\Test\ProblemStatement1solution\PromoEngineAppTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Learning\Test\ProblemStatement1solution\PromoEngineAppTestProject\obj\Debug\PromoEngineAppTestProject.csprojResolveAssemblyReference.cache
+D:\Learning\Test\ProblemStatement1solution\PromoEngineAppTestProject\obj\Debug\PromoEngineAppTestProject.dll
+D:\Learning\Test\ProblemStatement1solution\PromoEngineAppTestProject\obj\Debug\PromoEngineAppTestProject.pdb

@@ -1,0 +1,6 @@
+D:\Learning\Test\ProblemStatement1solution\PromotionEngineApp\bin\Debug\PromotionEngineApp.exe.config
+D:\Learning\Test\ProblemStatement1solution\PromotionEngineApp\bin\Debug\PromotionEngineApp.exe
+D:\Learning\Test\ProblemStatement1solution\PromotionEngineApp\bin\Debug\PromotionEngineApp.pdb
+D:\Learning\Test\ProblemStatement1solution\PromotionEngineApp\obj\Debug\PromotionEngineApp.csprojResolveAssemblyReference.cache
+D:\Learning\Test\ProblemStatement1solution\PromotionEngineApp\obj\Debug\PromotionEngineApp.exe
+D:\Learning\Test\ProblemStatement1solution\PromotionEngineApp\obj\Debug\PromotionEngineApp.pdb
