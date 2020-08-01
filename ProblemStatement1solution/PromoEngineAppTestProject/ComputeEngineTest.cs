@@ -32,7 +32,7 @@ namespace PromoEngineAppTestProject
             //lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "D", ProductBasePrice = 0 });
 
             int result = objComputeEngine.ComputePrice(lstProducts);
-            Assert.Equals(result, 370);
+            Assert.AreEqual(result, 370);
         }
 
         [TestMethod]
@@ -46,7 +46,7 @@ namespace PromoEngineAppTestProject
             lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "D", ProductBasePrice = 15 });
            
             int result = objComputeEngine.ComputePrice(lstProducts);
-            Assert.Equals(result, 280);
+            Assert.AreEqual(result, 280);
 
         }
     }
