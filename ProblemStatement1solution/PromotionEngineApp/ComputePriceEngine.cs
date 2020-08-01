@@ -8,7 +8,7 @@ namespace PromotionEngineApp
 {
    public class ComputePriceEngine
     {
-        public int ComputePrice()
+        public int ComputePrice(List<ProductModel> lstProductModel)
         {
            
             throw new NotImplementedException();

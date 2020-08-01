@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PromotionEngineApp;
+using System.Collections.Generic;
 
 namespace PromoEngineAppTestProject
 {
@@ -11,7 +12,36 @@ namespace PromoEngineAppTestProject
         public void ComputeTest()
         {
             ComputePriceEngine objComputeEngine = new ComputePriceEngine();
-            objComputeEngine.ComputePrice();
+            List<ProductModel> lstProducts = new List<ProductModel>();
+            lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "A", ProductBasePrice = 50 });
+            lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "B", ProductBasePrice = 30 });
+            lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "C", ProductBasePrice = 20 });
+            //lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "D", ProductBasePrice = 0 });
+            objComputeEngine.ComputePrice(lstProducts);
+        }
+
+        [TestMethod]
+        public void ComputeTest2()
+        {
+            ComputePriceEngine objComputeEngine = new ComputePriceEngine();
+            List<ProductModel> lstProducts = new List<ProductModel>();
+            lstProducts.Add(new ProductModel() { ProductCount = 5, ProductSKUId = "A", ProductBasePrice = 50 });
+            lstProducts.Add(new ProductModel() { ProductCount = 5, ProductSKUId = "B", ProductBasePrice = 30 });
+            lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "C", ProductBasePrice = 20 });
+            //lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "D", ProductBasePrice = 0 });
+            objComputeEngine.ComputePrice(lstProducts);
+        }
+
+        [TestMethod]
+        public void ComputeTest3()
+        {
+            ComputePriceEngine objComputeEngine = new ComputePriceEngine();
+            List<ProductModel> lstProducts = new List<ProductModel>();
+            lstProducts.Add(new ProductModel() { ProductCount = 3, ProductSKUId = "A", ProductBasePrice = 50 });
+            lstProducts.Add(new ProductModel() { ProductCount = 5, ProductSKUId = "B", ProductBasePrice = 30 });
+            lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "C", ProductBasePrice = 20 });
+            lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "D", ProductBasePrice = 15 });
+            objComputeEngine.ComputePrice(lstProducts);
         }
     }
 }

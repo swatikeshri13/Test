@@ -11,7 +11,7 @@ namespace PromotionEngineApp
         static void Main(string[] args)
         {
             ComputePriceEngine objComputeEngine = new ComputePriceEngine();
-            objComputeEngine.ComputePrice();
+            objComputeEngine.ComputePrice(new List<ProductModel>());
             Console.ReadKey();
         }
     }
