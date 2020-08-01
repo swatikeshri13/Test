@@ -17,7 +17,8 @@ namespace PromoEngineAppTestProject
             lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "B", ProductBasePrice = 30 });
             lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "C", ProductBasePrice = 20 });
             //lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "D", ProductBasePrice = 0 });
-            objComputeEngine.ComputePrice(lstProducts);
+            int result = objComputeEngine.ComputePrice(lstProducts);
+            Assert.AreEqual(result, 100);
         }
 
         [TestMethod]
@@ -29,7 +30,9 @@ namespace PromoEngineAppTestProject
             lstProducts.Add(new ProductModel() { ProductCount = 5, ProductSKUId = "B", ProductBasePrice = 30 });
             lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "C", ProductBasePrice = 20 });
             //lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "D", ProductBasePrice = 0 });
-            objComputeEngine.ComputePrice(lstProducts);
+
+            int result = objComputeEngine.ComputePrice(lstProducts);
+            Assert.Equals(result, 370);
         }
 
         [TestMethod]
@@ -41,7 +44,10 @@ namespace PromoEngineAppTestProject
             lstProducts.Add(new ProductModel() { ProductCount = 5, ProductSKUId = "B", ProductBasePrice = 30 });
             lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "C", ProductBasePrice = 20 });
             lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "D", ProductBasePrice = 15 });
-            objComputeEngine.ComputePrice(lstProducts);
+           
+            int result = objComputeEngine.ComputePrice(lstProducts);
+            Assert.Equals(result, 280);
+
         }
     }
 }
