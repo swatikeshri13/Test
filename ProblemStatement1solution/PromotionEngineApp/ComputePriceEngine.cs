@@ -8,6 +8,9 @@ namespace PromotionEngineApp
 {
     public class ComputePriceEngine
     {
+        private const int A3_SKU_Price=130;
+        private const int B2_SKU_Price = 45;
+
         public int ComputePrice(List<ProductModel> lstProductModel)
         {
             int resulatantPrice = 0;
@@ -68,7 +71,7 @@ namespace PromotionEngineApp
 
             {
 
-                resulatantPrice += ((productModelB.ProductCount / 2) * 45) + (productModelB.ProductBasePrice * (productModelB.ProductCount % 2));
+                resulatantPrice += ((productModelB.ProductCount / 2) * B2_SKU_Price) + (productModelB.ProductBasePrice * (productModelB.ProductCount % 2));
                 return true;
             }
             return false;
@@ -78,7 +81,7 @@ namespace PromotionEngineApp
         {
             if (productModel3A.ProductCount >= 3)
             {
-                resulatantPrice += ((productModel3A.ProductCount / 3) * 130) + (productModel3A.ProductBasePrice * (productModel3A.ProductCount % 3));
+                resulatantPrice += ((productModel3A.ProductCount / 3) * A3_SKU_Price) + (productModel3A.ProductBasePrice * (productModel3A.ProductCount % 3));
                 productModel3A.PromotionCodeApplied = true;
             }
             return productModel3A.PromotionCodeApplied;

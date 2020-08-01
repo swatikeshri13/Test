@@ -10,8 +10,6 @@ namespace PromotionEngineApp
     {
         public int ProductID { get; set; }
 
-        public string ProductName { get; set; }
-
         public int ProductBasePrice { get; set; }
 
         public string ProductSKUId { get; set; }

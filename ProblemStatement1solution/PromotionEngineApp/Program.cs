@@ -11,7 +11,13 @@ namespace PromotionEngineApp
         static void Main(string[] args)
         {
             ComputePriceEngine objComputeEngine = new ComputePriceEngine();
-            objComputeEngine.ComputePrice(new List<ProductModel>());
+            List<ProductModel> lstProducts = new List<ProductModel>();
+            lstProducts.Add(new ProductModel() { ProductCount = 3, ProductSKUId = "A", ProductBasePrice = 50 });
+            lstProducts.Add(new ProductModel() { ProductCount = 5, ProductSKUId = "B", ProductBasePrice = 30 });
+            lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "C", ProductBasePrice = 20 });
+            lstProducts.Add(new ProductModel() { ProductCount = 1, ProductSKUId = "D", ProductBasePrice = 15 });
+
+            objComputeEngine.ComputePrice(lstProducts);
             Console.ReadKey();
         }
     }
